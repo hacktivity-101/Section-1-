@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>shopnow.in</title>
+
+    <link
+        href="https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic"
+        rel="stylesheet" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+
+        :root{
+            --theme-color: #415399;
+        }
+        body {
+            margin: 0;
+        }
+
+        header {
+            background-image: url('https://www.shutterstock.com/image-photo/trendy-beautiful-young-asian-woman-260nw-1590685858.jpg');
+            color: white;
+            height: 70vh;
+            background-size: cover;
+            text-align: center;
+            padding-top: 300px;
+            box-sizing: border-box;
+        }
+
+        .hero-title {
+            margin: 0;
+            font-family: Roboto;
+        }
+
+        .hero-subtitle {
+            /* text-align: center; */
+            font-family: Roboto;
+        }
+
+        .hero-btn {
+            padding: 10px 20px;
+            background-color: white;
+            border: none;
+            border-radius: 5px;
+        }
+
+        .feature-card {
+           /* border: 2px solid red; */
+            text-align: center;
+            padding: 50px;
+            transition-duration: 0.3s;
+            border-radius: 10px;
+        }
+        .feature-card:hover{
+            background-color: var(--theme-color);
+            color: white;
+        }
+
+        .section-features {
+            /* display: flex; */
+            font-family: Roboto;
+            padding: 50px 300px;
+            color: blue;
+            color: var(--theme-color);
+        }
+
+        .card-container{
+            display: flex;
+            gap: 30px;
+        }
+
+        .section-title{
+            text-align: center;
+            font-size: 3rem;
+        }
+        .section-video{
+            padding: 50px 300px;
+
+        }
+        .section-video video{
+            width: 100%;
+        }
+        .section-contact{
+            padding: 50px 300px;
+
+        }
+        .text-input , .text-input-area{
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 30px;
+        }
+        .contact-btn{
+            padding: 10px 20px;
+            background-color: var(--theme-color);
+            color: white;
+            border: none;
+            border-radius: 5px;
+        }
+        footer{
+            padding: 50px 300px;
+            font-family: Roboto;
+            background-color: var(--theme-color);
+            color: white;
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+
+
+        }
+        .social-link{
+            color: white;
+            display: block;
+            margin-bottom: 10px;
+            text-decoration: none;
+        }
+
+
+    </style>
+
+</head>
+
+<body>
+
+    <header>
+        <h1 class="hero-title" style="text-align: left; font-size: 4rem;">Welcome to Shop Now </h1>
+        <h3 class="hero-subtitle" style="text-align: left;">Discover trendy fashion, electronics, home goods, and more at our convenient online store today!
+        .</h3>
+        <button class="hero-btn">Learn More</button>
+    </header>
+
+    <main>
+        <section class="section-features">
+            <h2 class="section-title">Our Features</h2>
+
+            <div class="card-container">
+
+                <div class="feature-card">
+                    <i class="fa-solid fa-truck-arrow-right fa-5x"></i>
+                    <h3>Fast Delivery</h3>
+                    <p>Speedy shipping, Express delivery, Swift dispatch, Rapid transport, Quick drop-off, Instant shipment, Expedited service, Priority shipping.</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fa-brands fa-rocketchat fa-5x"></i>
+                    <h3>24/7 Support</h3>
+                    <p>24/7 Support: Always here for you! Click anytime for assistance with your online shopping needs. Happy to help!</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fa-solid fa-hand-holding-dollar fa-5x"></i>
+                    <h3>Cash On Delivery Available</h3>
+                    <p>Convenient COD option available for secure payments upon delivery. Order now and pay when your package arrives!</p>
+                </div>
+
+            </div>
+
+
+        </section>
+        <section class="section-video">
+            <h2 class="section-title"></h2>
+            <video src="video1.mp4" autoplay controls muted loop></video>
+        </section>
+        <section class="section-contact">
+
+            <h2 class="section-title">Contact Us</h2>
+            <form>
+                <label>Name</label>
+                <input type="text" class="text-input">
+                <label>Email Address</label>
+                <input type="email" class="text-input">
+                <label>Contact No.</label>
+                <input type="number" class="text-input">
+                <label>Message</label>
+                <textarea rows="5" class="text-input-area"></textarea>
+                <button class="contact-btn">Submit</button>
+
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <div>
+            <h2 class="footer-title">Shop Now</h2>
+            <p>&copy; 2024 Shop Now </p>
+        </div>
+        <div>
+            <h3>Visit Us at:</h3>
+            <a href="#" class="social-link"><i class="fa-brands fa-facebook"></i> Facebook</a>
+            <a href="#" class="social-link"><i class="fa-brands fa-instagram"></i> Instagram</a>
+            <a href="#" class="social-link"><i class="fa-brands fa-linkedin"></i> Linkdin</a>
+            <a href="#" class="social-link"><i class="fa-brands fa-square-x-twitter"></i> X(Twitter)</a>
+        </div>
+    
+
+    </footer>
+
+</body>
+
+</html>
